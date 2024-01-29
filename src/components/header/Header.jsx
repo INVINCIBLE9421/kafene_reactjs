@@ -13,9 +13,9 @@ const Header = () => {
                     <p className='brand'>Kafene</p>
                 </div>
                 <nav>
-                    <Link className={`link ${currentPath === '/orders' ? 'disabled' : ''}`} to='/orders'>Orders</Link>
-                    <Link className={`link ${currentPath === '/products' ? 'disabled' : ''}`} to='/products'>Products</Link>
-                    <Link className={`link ${currentPath === '/users' ? 'disabled' : ''}`} to='/users'>Users</Link>
+                    <Link className={`link ${currentPath === '/' || currentPath === '/orders' ? 'disabled' : ''}`} to='/orders'>Orders</Link>
+                    <Link className={`link ${currentPath === '/' || currentPath === '/products' ? 'disabled' : ''}`} to='/products'>Products</Link>
+                    <Link className={`link ${currentPath === '/' || currentPath === '/users' ? 'disabled' : ''}`} to='/users'>Users</Link>
                 </nav>
             </div>
             <Link className='link' id='logout' to="/">Logout</Link>
